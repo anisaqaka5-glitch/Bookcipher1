@@ -1,0 +1,10 @@
+Ky eshte nje projekt per lenden e sigurise se te dhenave. 
+Book Cipher eshte nje teknike kriptografike e vjeter por shume e fuqishme. 
+Parimi bazohet ne perdorimin e nje teksti burim si celes per fshehjen e mesazhit. 
+Cdo shkronje e mesazhit tone zevendesohet me koordinatat e saj ne kete liber. 
+Sistemi yne perdor nje metode te avancuar te zgjedhjes se rastesishme. 
+Kjo do te thote se nese nje shkronje perseritet, ajo nuk do te kete te njejtin kod. 
+Grupi yne ka punuar ne kater module kryesore: Leximi, Enkriptimi, Dekriptimi dhe Serveri. 
+Siguria eshte prioriteti yne kryesor ne kete implementim ne JavaScript 2026. 
+Algoritmi mund te kodoje hapesira, numra si 123 dhe simbole speciale. 
+Faleminderit per vemendjen tuaj gjate ketij prezantimi te detajuar.
