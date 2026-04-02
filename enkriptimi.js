@@ -1,35 +1,23 @@
-
+const { processText } = require('./perpunimiTekstit'); 
 
 function encrypt(message, index) {
-let encrypted = [];
 
+    const words = processText(message); 
+    const result = [];
 
-message = message.toLowerCase();
+    for (let i = 0; i < words.length; i++) {
+        const word = words[i];
 
-for (let i = 0; i < message.length; i++) {
-let char = message[i];
+        if (index[word]) {
+            const positions = index[word];
+            const rand = Math.floor(Math.random() * positions.length);
+            result.push(positions[rand]);
+        } else {
+            result.push("?");
+        }
+    }
 
-if (char === " ") {
-encrypted.push(" ");
-continue;
+    return result.join(" ");
 }
 
-
-if (index[char] && index[char].length > 0) {
-let positions = index[char];
-
-
-let randomIndex = Math.floor(Math.random() * positions.length);
-let [line, word, letter] = positions[randomIndex];
-
-encrypted.push(`(${line},${word},${letter})`);
-} else {
-
-encrypted.push("(?)");
-}
-}
-
-return encrypted.join(" ");
-}
-
-export { encrypt };
+module.exports = { encrypt }; 
